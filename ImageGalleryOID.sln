@@ -3,11 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGallery.API", "ImageGallery.API\ImageGallery.API.csproj", "{29695FB1-5005-4374-A06A-B65DEC3DD980}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageGallery.API", "ImageGallery.API\ImageGallery.API.csproj", "{29695FB1-5005-4374-A06A-B65DEC3DD980}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B94131A-59C7-47C5-8BD4-836DA97107DA} = {9B94131A-59C7-47C5-8BD4-836DA97107DA}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGallery.Client", "ImageGallery.Client\ImageGallery.Client.csproj", "{396FD684-217B-44B5-A345-DECDAB00E520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageGallery.Client", "ImageGallery.Client\ImageGallery.Client.csproj", "{396FD684-217B-44B5-A345-DECDAB00E520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGallery.Model", "ImageGallery.Model\ImageGallery.Model.csproj", "{9B94131A-59C7-47C5-8BD4-836DA97107DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageGallery.Model", "ImageGallery.Model\ImageGallery.Model.csproj", "{9B94131A-59C7-47C5-8BD4-836DA97107DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
