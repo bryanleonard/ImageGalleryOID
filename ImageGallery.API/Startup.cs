@@ -75,10 +75,10 @@ namespace ImageGallery.API
             AutoMapper.Mapper.AssertConfigurationIsValid();
 
             // ensure DB migrations are applied
-            galleryContext.Database.Migrate();
+            //galleryContext.Database.Migrate();
 
             // seed the DB with data
-            galleryContext.EnsureSeedDataForContext();
+            //galleryContext.EnsureSeedDataForContext();
 
             app.UseMvc();
         }

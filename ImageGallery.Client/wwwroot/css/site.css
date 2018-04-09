@@ -10,6 +10,13 @@
     padding-right: 15px;
 }
 
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
@@ -21,15 +28,42 @@
     width: 100%;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
-        display: none;
+        display: none
     }
+}
+
+
+.defaultButton {
+    width: 100px;
+    height: 50px;
+}
+
+.bottomMarginDefault {
+    margin-bottom: 30px;
+}
+
+.bottomMarginSmall {
+    margin-bottom: 15px;
+}
+
+.rightMarginDefault {
+    margin-right: 30px;
+}
+
+.leftMarginDefault {
+    margin-left: 30px;
+}
+
+.leftMarginSmaller {
+    margin-left: 15px;
+}
+
+.thumbnailImage {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
 }
