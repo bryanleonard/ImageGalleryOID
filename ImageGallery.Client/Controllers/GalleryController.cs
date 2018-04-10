@@ -42,14 +42,10 @@ namespace ImageGallery.Client.Controllers
             throw new Exception($"A problem happened while calling the API: {response.ReasonPhrase}");
         }
 
-
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        
         public async Task<IActionResult> EditImage(Guid id)
         {
-            // Call the API
+            // call the API
             var httpClient = await _imageGalleryHttpClient.GetClient();
 
             var response = await httpClient.GetAsync($"api/images/{id}").ConfigureAwait(false);

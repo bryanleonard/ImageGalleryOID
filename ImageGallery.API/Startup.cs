@@ -45,7 +45,7 @@ namespace ImageGallery.API
         {
             loggerFactory.AddConsole();
 
-            if (env.IsDevelopment())
+            if (!env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -75,10 +75,10 @@ namespace ImageGallery.API
             AutoMapper.Mapper.AssertConfigurationIsValid();
 
             // ensure DB migrations are applied
-            //galleryContext.Database.Migrate();
+            galleryContext.Database.Migrate(); // also ensures DB is created.
 
             // seed the DB with data
-            //galleryContext.EnsureSeedDataForContext();
+            galleryContext.EnsureSeedDataForContext();
 
             app.UseMvc();
         }
